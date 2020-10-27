@@ -19,7 +19,15 @@ const printTeacher: printTeacherFunction = function (firstName: string, lastName
   return `${firstName[0]}. ${lastName}`;
 }
 
-class StudentClass {
+interface StudentConstructor {
+  new (firstName: string, lastName: string): StudentInterface;
+}
+interface StudentInterface {
+    workOnHomework(): string;
+    displayName(): string;
+}
+
+const StudentClass: StudentConstructor = class StudentClass implements StudentInterface {
   firstName: string;
   lastName: string;
 
@@ -36,4 +44,4 @@ class StudentClass {
   displayName (): string {
     return this.firstName;
   }
-}
+};
