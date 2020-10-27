@@ -23,15 +23,15 @@ interface StudentConstructor {
   new (firstName: string, lastName: string): StudentInterface;
 }
 interface StudentInterface {
-    workOnHomework(): string;
-    displayName(): string;
+    workOnHomework (): string;
+    displayName (): string;
 }
 
 const StudentClass: StudentConstructor = class StudentClass implements StudentInterface {
   firstName: string;
   lastName: string;
 
-  constructor (firstName: string, lastName: string) {
+  constructor (firstName: string, lastName: string): StudentInterface {
     this.firstName = firstName;
     this.lastName = lastName;
   }
