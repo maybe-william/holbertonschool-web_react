@@ -21,9 +21,9 @@ interface printTeacherFunction {
 
 const printTeacher: printTeacherFunction = function (firstName: string, lastName: string): string {
   if (firstName.length > 0) {
-    return `${firstName[0]}. ${lastName}`;
+    console.log(`${firstName[0]}. ${lastName}`);
   }
-  return lastName;
+  console.log(lastName);
 }
 
 interface StudentInterface {
