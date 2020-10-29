@@ -1,3 +1,4 @@
+/* executeWork(employee: DirectorInterface | TeacherInterface) */
 
 interface DirectorInterface {
   workFromHome(): string;
