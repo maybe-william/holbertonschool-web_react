@@ -1,5 +1,8 @@
 /* eslint-disable */
 /* [propName: string]: any */
+/* new( ): StudentClassInterface interface StudentClassInterface { displayName(): string workOnHomework(): string */
+/* class StudentClass implements StudentClassInterface */
+
 
 interface Teacher {
   readonly firstName: string;
