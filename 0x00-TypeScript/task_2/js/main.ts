@@ -1,4 +1,5 @@
 /* executeWork(employee: DirectorInterface | TeacherInterface) */
+/* todayClass:Subjects */
 
 interface DirectorInterface {
   workFromHome(): string;
