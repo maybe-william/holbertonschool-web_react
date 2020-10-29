@@ -1,4 +1,5 @@
 /* eslint-disable */
+/* [propName: string]: any */
 
 interface Teacher {
   readonly firstName: string;
