@@ -5,5 +5,14 @@
   },
   "dependencies": {
     "jQuery": "^1.7.4"
-  }
+  },
+  "name": "holberton_dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard data for the students",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: test not yet setup\""
+  },
+  "author": "Copyright - Holberton School",
+  "license": "ISC"
 }
