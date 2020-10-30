@@ -1,8 +1,9 @@
 {
-  "name": "holberton_dashboard",
+  "name": "task_0",
   "version": "1.0.0",
-  "description": "Dashboard data for the students",
-  "main": "src/index.js",
+  "main": "index.js",
+  "keywords": [],
+  "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
