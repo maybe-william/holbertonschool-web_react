@@ -7,6 +7,10 @@ module.exports = {
     all: ["./modules/header/header.js", "./modules/body/body.js", "./modules/footer/footer.js"],
   },
   devtool: 'inline-source-map',
+  devServer: {
+    contentBase: "./public",
+    port: 8564
+  }
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
