@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     all: ["./modules/header/header.js", "./modules/body/body.js", "./modules/footer/footer.js"],
   },
+  devtool: 'inline-source-map',
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
