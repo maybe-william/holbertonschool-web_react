@@ -1,0 +1,8 @@
+:root {
+  --holberton-red: #e0354b;
+}
+
+.Notifications {
+  padding: 20px;
+  border: 2px dotted var(--holberton-red);
+}
