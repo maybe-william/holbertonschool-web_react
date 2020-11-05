@@ -1,3 +1,4 @@
+import React from 'react';
 const { getFullYear, getFooterCopy, getLatestNotification } = require('./utils');
 
 test('Year returns 2020', () => {

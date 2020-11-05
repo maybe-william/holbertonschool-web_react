@@ -3,7 +3,7 @@ import './Notifications.css';
 import ex from './close-icon.png';
 import { getLatestNotification } from './utils.js';
 
-export function Notifications() {
+export default function Notifications() {
   function logClick() {
     console.log("Close button has been clicked");
   }
