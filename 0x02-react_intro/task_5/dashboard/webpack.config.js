@@ -1,17 +1,15 @@
 const path = require('path');
 
 module.exports = {
-  entry: {
-    all: ["./src/index.js"],
-  },
+  entry: "./src/index.js",
   devtool: 'inline-source-map',
   devServer: {
     contentBase: "./dist",
-    port: 3000
+    port: 8564
   },
   mode: "production",
   output: {
-    path:path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "dist"),
     filename: "bundle.js"
   },
   module: {
