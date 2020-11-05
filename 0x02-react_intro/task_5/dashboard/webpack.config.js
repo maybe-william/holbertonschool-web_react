@@ -14,6 +14,16 @@ module.exports = {
   },
   module: {
     rules: [
+        {
+            test: /\.m?js$/,
+            exclude: /(node_modules|bower_components)/,
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    presets: ['@babel/env', '@babel/react']
+                }
+            }
+        },
       {
         test: /\.css$/,
         use: [
@@ -24,7 +34,7 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
-          'file-loader',
+            'file-loader',
             {
                 loader: 'image-webpack-loader',
                 options: {
