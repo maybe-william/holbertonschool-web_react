@@ -1,8 +1,21 @@
 :root {
   --holberton-red: #e0354b;
+  --danger-red: #ff0200;
+  --safety-blue: #1d0563;
 }
 
+
 .Notifications {
-  padding: 20px;
+  position: relative;
+  text-align: left;
+  padding: 20px 20px;
   border: 2px dotted var(--holberton-red);
+}
+
+li[data-priority="default"] {
+  color: var(--safety-blue);
+}
+
+li[data-priority="urgent"] {
+  color: var(--danger-red);
 }
