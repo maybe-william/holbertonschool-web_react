@@ -2,11 +2,11 @@
   "name": "dashboard",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
+  "main": "config/webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start-dev": "webpack-dev-server --open"
+    "build": "webpack --config config/webpack.config.js",
+    "start-dev": "webpack-dev-server --config config/webpack.config.js --open --hot"
   },
   "author": "",
   "license": "ISC",

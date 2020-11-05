@@ -1,7 +1,7 @@
 import React from 'react';
 import './Notifications.css';
-import ex from './close-icon.png';
-import { getLatestNotification } from './utils.js';
+import ex from '../assets/close-icon.png';
+import { getLatestNotification } from '../utils/utils.js';
 
 export default function Notifications() {
   function logClick() {
