@@ -8,14 +8,14 @@ import Footer from '../Footer/Footer.js';
 function App() {
   return (
     <React.Fragment>
-    {Notifications()}
+    <Notifications />
     <div className="App">
-      {Header()}
+      <Header />
       <div className="App-body">
-        {Login()}
+        <Login />
       </div>
       <div className="App-footer">
-        {Footer()}
+        <Footer />
       </div>
     </div>
     </React.Fragment>
