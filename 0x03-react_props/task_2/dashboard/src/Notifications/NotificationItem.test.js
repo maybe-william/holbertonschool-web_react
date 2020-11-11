@@ -9,9 +9,13 @@ describe('<NotificationItem />', () => {
     const wrapper = shallow(<NotificationItem />);
     expect(wrapper.exists()).to.equal(true);
   });
-  it('renders correctly given dummy type and value props', () => {
+  it('renders correctly given dummy type prop', () => {
     const wrapper = shallow(<NotificationItem type="dummy_type" value="dummy_value"/>);
     expect(wrapper.props()).to.have.property('data-notification-type','dummy_type');
+    expect(wrapper.text()).to.equal('dummy_value');
+  });
+  it('renders correctly given dummy value prop', () => {
+    const wrapper = shallow(<NotificationItem type="dummy_type" value="dummy_value"/>);
     expect(wrapper.text()).to.equal('dummy_value');
   });
   it('renders correctly given dummy html', () => {
