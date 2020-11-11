@@ -1,0 +1,13 @@
+:root {
+  --holberton-red: #e0354b;
+}
+
+.App-footer {
+  border-top: 3px solid var(--holberton-red);
+  height: 50px;
+}
+
+
+.copyright-text {
+  font-style: italic;
+}

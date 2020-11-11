@@ -6,10 +6,15 @@
 
 
 .Notifications {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
   text-align: left;
+  margin: 10px 10px;
   padding: 20px 20px;
+  width: 400px;
   border: 2px dotted var(--holberton-red);
+  background-color: white;
 }
 
 li[data-priority="default"] {
