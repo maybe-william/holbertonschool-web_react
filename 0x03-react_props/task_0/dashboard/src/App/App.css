@@ -20,15 +20,6 @@ form * {
   justify-content: space-between;
 }
 
-.App-header {
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  border-bottom: 3px solid var(--holberton-red);
-}
-
 .App-body {
   font-weight: bold;
   text-align: left;

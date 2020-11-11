@@ -19,9 +19,6 @@ module.exports = {
             exclude: /(node_modules|bower_components)/,
             use: {
                 loader: 'babel-loader',
-                options: {
-                    presets: ['@babel/env', '@babel/react']
-                }
             }
         },
       {
@@ -32,7 +29,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpe?g|gif)$/,
         use: [
             'file-loader',
             {

@@ -1,1 +1,1 @@
-module.exports = 'stub';
+export default 'stub';
