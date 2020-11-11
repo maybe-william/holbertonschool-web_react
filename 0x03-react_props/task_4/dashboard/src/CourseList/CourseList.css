@@ -1,0 +1,29 @@
+:root {
+  --holberton-red: #e0354b;
+  --danger-red: #ff0200;
+  --safety-blue: #1d0563;
+}
+
+table {
+  text-align: left;
+  margin: 10px;
+  border: 1px solid lightgrey;
+  width: 100%;
+}
+
+th, td {
+  padding: 5px;
+}
+
+td {
+  font-weight: normal;
+}
+
+th {
+  font-weight: bold;
+  border-bottom: 3px solid grey;
+}
+
+tr :only-child {
+  text-align: center;
+}
