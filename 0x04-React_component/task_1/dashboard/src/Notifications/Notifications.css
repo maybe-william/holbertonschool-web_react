@@ -1,0 +1,40 @@
+:root {
+  --holberton-red: #e0354b;
+  --danger-red: #ff0200;
+  --safety-blue: #1d0563;
+}
+
+.menuItem {
+  top: 0px;
+  right: 0px;
+  text-align: right;
+  margin: 10px;
+}
+
+.Notifications {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  text-align: left;
+  margin: 10px 10px;
+  padding: 20px 20px;
+  width: 400px;
+  border: 2px dotted var(--holberton-red);
+  background-color: white;
+}
+
+li[data-priority="default"] {
+  color: var(--safety-blue);
+}
+
+li[data-priority="urgent"] {
+  color: var(--danger-red);
+}
+
+li[data-notification-type="default"] {
+  color: var(--safety-blue);
+}
+
+li[data-notification-type="urgent"] {
+  color: var(--danger-red);
+}
