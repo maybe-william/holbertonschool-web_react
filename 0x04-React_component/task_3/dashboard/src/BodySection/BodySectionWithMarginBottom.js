@@ -19,7 +19,7 @@ class BodySectionWithMarginBottom extends React.Component {
 
 BodySectionWithMarginBottom.propTypes = {
   title: PropTypes.string,
-  children: PropTypes.array
+  children: PropTypes.object
 };
 
 BodySectionWithMarginBottom.defaultProps = {

@@ -19,7 +19,7 @@ class BodySection extends React.Component {
 
 BodySection.propTypes = {
   title: PropTypes.string,
-  children: PropTypes.array
+  children: PropTypes.object
 };
 
 BodySection.defaultProps = {
