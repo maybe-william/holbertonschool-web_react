@@ -1,0 +1,7 @@
+:root {
+  --holberton-red: #e0354b;
+}
+
+form * {
+  margin-right: 10px;
+}
