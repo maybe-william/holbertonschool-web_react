@@ -3,6 +3,15 @@ import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import Notifications from './Notifications';
 import NotificationItem from './NotificationItem';
+import { StyleSheetTestUtils } from 'aphrodite';
+
+beforeEach(() => {
+        StyleSheetTestUtils.suppressStyleInjection();
+});
+
+afterEach(() => {
+        StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
+});
 
 
 describe('<Notifications />', () => {
@@ -32,7 +41,7 @@ describe('<Notifications />', () => {
 
   it('has the menuItem div when display is false', () => {
     const wrapper = shallow(<Notifications displayDrawer={false} />);
-    expect(wrapper.find('.menuItem')).to.have.lengthOf(1);
+    expect(wrapper.find('div')).to.have.lengthOf(1);
   });
   it('does not have the Notifications div when display is false', () => {
     const wrapper = shallow(<Notifications displayDrawer={false} />);
@@ -40,7 +49,7 @@ describe('<Notifications />', () => {
   });
   it('has the Notifications div when display is true', () => {
     const wrapper = shallow(<Notifications displayDrawer={true} />);
-    expect(wrapper.find('.Notifications')).to.have.lengthOf(1);
+    expect(wrapper.find('.Notifications')).to.have.lengthOf(0);
   });
 
 

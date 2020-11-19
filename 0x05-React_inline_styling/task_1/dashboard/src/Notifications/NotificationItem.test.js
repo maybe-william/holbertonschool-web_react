@@ -2,6 +2,15 @@ import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import NotificationItem from './NotificationItem';
+import { StyleSheetTestUtils } from 'aphrodite';
+
+beforeEach(() => {
+        StyleSheetTestUtils.suppressStyleInjection();
+});
+
+afterEach(() => {
+        StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
+});
 
 
 describe('<NotificationItem />', () => {

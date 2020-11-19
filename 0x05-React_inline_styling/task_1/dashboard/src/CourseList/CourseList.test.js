@@ -3,6 +3,15 @@ import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import CourseList from './CourseList';
 import CourseListRow from './CourseListRow';
+import { StyleSheetTestUtils } from 'aphrodite';
+
+beforeEach(() => {
+        StyleSheetTestUtils.suppressStyleInjection();
+});
+
+afterEach(() => {
+        StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
+});
 
 
 describe('<CourseList />', () => {
