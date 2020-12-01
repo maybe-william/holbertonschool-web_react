@@ -1,5 +1,5 @@
-import { getIn } from 'immutable';
+import { getIn, Map } from 'immutable';
 
 export default function accessImmutableObject(object, array) {
-  return getIn(object, array, undefined);
+  return getIn(Map(object), array, undefined);
 }
