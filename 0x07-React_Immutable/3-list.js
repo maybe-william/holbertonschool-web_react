@@ -5,5 +5,5 @@ export function getListObject(array) {
 }
 
 export function addElementToList(list, element) {
-  return list.set(-1, element);
+  return list.push(element);
 }
