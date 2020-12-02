@@ -1,6 +1,6 @@
-import { Map } from 'immutable';
+import { fromJS } from 'immutable';
 
-export const map = Map({
+export const map = fromJS({
   1: 'Liam',
   2: 'Noah',
   3: 'Elijah',
@@ -9,7 +9,4 @@ export const map = Map({
   6: 'Lucas',
 });
 
-export const map2 = map.merge(Map({
-  2: 'Benjamin',
-  4: 'Oliver',
-}));
+export const map2 = map.set(2, 'Benjamin').set(4, 'Oliver');
